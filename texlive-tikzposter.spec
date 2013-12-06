@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-tikzposter
 Version:	1.1
-Release:	2
+Release:	3
 Summary:	Create scientific posters using TikZ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzposter
