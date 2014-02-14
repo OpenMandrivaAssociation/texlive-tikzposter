@@ -1,12 +1,12 @@
-# revision 29942
+# revision 32732
 # category Package
 # catalog-ctan /graphics/pgf/contrib/tikzposter
-# catalog-date 2013-04-04 11:28:51 +0200
+# catalog-date 2014-01-20 12:50:28 +0100
 # catalog-license lppl1.2
-# catalog-version 1.1
+# catalog-version 2.0
 Name:		texlive-tikzposter
-Version:	1.1
-Release:	5
+Version:	2.0
+Release:	1
 Summary:	Create scientific posters using TikZ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzposter
@@ -35,13 +35,16 @@ automated.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/tikzposter/tikzposter-colorthemes.tex
-%{_texmfdistdir}/tex/latex/tikzposter/tikzposter-layoutstyles.tex
 %{_texmfdistdir}/tex/latex/tikzposter/tikzposter.cls
+%{_texmfdistdir}/tex/latex/tikzposter/tikzposterBackgroundstyles.tex
+%{_texmfdistdir}/tex/latex/tikzposter/tikzposterBlockstyles.tex
+%{_texmfdistdir}/tex/latex/tikzposter/tikzposterColorpalettes.tex
+%{_texmfdistdir}/tex/latex/tikzposter/tikzposterColorstyles.tex
+%{_texmfdistdir}/tex/latex/tikzposter/tikzposterInnerblockstyles.tex
+%{_texmfdistdir}/tex/latex/tikzposter/tikzposterLayoutthemes.tex
+%{_texmfdistdir}/tex/latex/tikzposter/tikzposterNotestyles.tex
+%{_texmfdistdir}/tex/latex/tikzposter/tikzposterTitlestyles.tex
 %doc %{_texmfdistdir}/doc/latex/tikzposter/README
-%doc %{_texmfdistdir}/doc/latex/tikzposter/logo.png
-%doc %{_texmfdistdir}/doc/latex/tikzposter/logoL.png
-%doc %{_texmfdistdir}/doc/latex/tikzposter/logoR.png
 %doc %{_texmfdistdir}/doc/latex/tikzposter/tikzposter-example.tex
 %doc %{_texmfdistdir}/doc/latex/tikzposter/tikzposter-template.tex
 %doc %{_texmfdistdir}/doc/latex/tikzposter/tikzposter.pdf
