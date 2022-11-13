@@ -1,19 +1,13 @@
-# revision 32732
-# category Package
-# catalog-ctan /graphics/pgf/contrib/tikzposter
-# catalog-date 2014-01-20 12:50:28 +0100
-# catalog-license lppl1.2
-# catalog-version 2.0
 Name:		texlive-tikzposter
-Version:	2.0
-Release:	6
+Version:	32732
+Release:	1
 Summary:	Create scientific posters using TikZ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzposter
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzposter.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzposter.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzposter.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzposter.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzposter.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzposter.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ and spacing and layout of the poster is to a large extent
 automated.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -54,7 +48,8 @@ automated.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
