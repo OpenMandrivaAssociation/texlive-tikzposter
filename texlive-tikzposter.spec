@@ -1,6 +1,6 @@
 Name:		texlive-tikzposter
 Version:	32732
-Release:	1
+Release:	2
 Summary:	Create scientific posters using TikZ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzposter
