@@ -3,7 +3,7 @@ Version:	32732
 Release:	2
 Summary:	Create scientific posters using TikZ
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzposter
+URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzposter
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzposter.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzposter.doc.r%{version}.tar.xz
